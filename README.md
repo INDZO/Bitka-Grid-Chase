@@ -4,7 +4,11 @@
 
 The React client renders a grid, turns, events and search diagnostics. The Django backend owns game state and legal moves. Django Channels broadcasts changes over WebSockets, with REST endpoints used for game actions and state.
 
-![Local Bitka Grid Chase release with original geometric game markers](docs/start-screen.jpg)
+## Preview
+
+![Bitka Grid Chase start screen showing a sample board with player and enemy markers](docs/start-screen.jpg)
+
+[Original Render demo ↗](https://bitka-upside-down.onrender.com/) · The hosted course build uses the original theme. Render Free services may take about a minute to wake up after inactivity. The screenshot and local setup show the public source release.
 
 ## Implemented search
 
@@ -15,7 +19,7 @@ The React client renders a grid, turns, events and search diagnostics. The Djang
 | A* | Searches grid positions and reconstructs a path. |
 | Monte Carlo tree search | Selects moves from sampled rollouts. |
 
-See `backend/ai/algorithms.py` for dispatch, heuristics, path reconstruction and rollouts, and `backend/game/engine.py` for game rules. This public source release replaces franchise names and character sprites with original geometric markers. The [original hosted course demo](https://bitka-upside-down.onrender.com/) has a different theme.
+See `backend/ai/algorithms.py` for dispatch, heuristics, path reconstruction and rollouts, and `backend/game/engine.py` for game rules. This public source release replaces franchise names and character sprites with original geometric markers.
 
 ## Run locally
 
